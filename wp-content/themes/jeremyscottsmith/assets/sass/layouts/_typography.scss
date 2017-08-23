@@ -1,3 +1,8 @@
+html {
+  font-family: $copy-font;
+  font-size: 15px;
+}
+
 a{
   color: $black;
   @include transition(all 0.3s ease-in-out);
@@ -15,4 +20,8 @@ h4,
 h5,
 h6{
   font-family: $title-font;
+}
+
+h2 {
+  font-size: 45px;
 }
