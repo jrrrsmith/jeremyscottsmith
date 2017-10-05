@@ -12,13 +12,6 @@ body {
   word-break: break-word;
   font-family: $copy-font;
   margin: 0;
-  background-color: rgb(161,254,193); /*top colour*/
-  background-image: -webkit-linear-gradient(top, rgb(161,254,193), rgb(235,200,240));
-  background-image:    -moz-linear-gradient(top, rgb(161,254,193), rgb(235,200,240));
-  background-image:      -o-linear-gradient(top, rgb(161,254,193), rgb(235,200,240));
-  background-image:         linear-gradient(to bottom, rgb(161,254,193), rgb(235,200,240));
-  background-attachment: fixed;
-  line-height: 1;
 }
 
 figure{
@@ -31,10 +24,9 @@ img {
 }
 
 .wrap {
-  max-width: 1240px;
+  @include outer-container;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0 auto;
 
   @include media($mobile){
     padding-left: 10px;

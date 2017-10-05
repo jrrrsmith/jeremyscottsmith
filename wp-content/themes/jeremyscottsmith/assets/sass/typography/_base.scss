@@ -1,11 +1,5 @@
-html {
-  font-family: $copy-font;
-  font-size: 15px;
-}
-
 a{
   color: $black;
-  display: inline-block;
   @include transition(all 0.3s ease-in-out);
   &:active,
   &:hover,
@@ -21,9 +15,4 @@ h4,
 h5,
 h6{
   font-family: $title-font;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 45px;
 }

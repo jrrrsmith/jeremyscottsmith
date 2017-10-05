@@ -6,6 +6,18 @@
 
   add_action('init', 'init_remove_support',100);
 
+  if( function_exists('acf_add_options_page') ) {
+  
+    acf_add_options_page(array(
+      'page_title'  => 'Contact Info',
+      'menu_title'  => 'Contact Info',
+      'menu_slug'   => 'contact-info',
+      'capability'  => 'edit_posts',
+      'redirect'    => false
+    ));
+    
+  }
+
 
   // function custom_post_type() {
   //  $labels = array(
